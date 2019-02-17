@@ -1,0 +1,7 @@
+[
+{
+    "id" : "npasteUpload",
+    "caption" : "Paste to npaste",
+    "command" : "npaste_upload"
+}
+]

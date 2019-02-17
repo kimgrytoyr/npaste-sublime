@@ -1,0 +1,6 @@
+[
+{ 
+  "keys": ["super+alt+n"],
+  "command": "npaste_upload"
+}
+]
