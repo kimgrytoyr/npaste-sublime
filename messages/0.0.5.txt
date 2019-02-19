@@ -1,0 +1,2 @@
+Version 0.0.5:
+- Added main menu entry for npaste to allow easier editing of the settings.

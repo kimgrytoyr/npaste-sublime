@@ -1,0 +1,24 @@
+[
+	{
+		"id": "preferences",
+		"children": [
+			{
+				"id": "package-settings",
+				"children": [
+					{
+						"caption": "npaste",
+						"children": [
+							{
+								"caption": "Settings",
+								"command": "edit_settings",
+								"args": {
+									"base_file": "${packages}/npaste/settings/npaste.sublime-settings"
+								}
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]

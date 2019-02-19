@@ -1,0 +1,36 @@
+                                             
+                               ,--.          
+,--,--,  ,---.  ,--,--. ,---.,-'  '-. ,---.  
+|      \| .-. |' ,-.  |(  .-''-.  .-'| .-. : 
+|  ||  || '-' '\ '-'  |.-'  `) |  |  \   --. 
+`--''--'|  |-'  `--`--'`----'  `--'   `----' 
+        `--'                                 
+
+Thank you for installing the npaste-sublime plugin.
+
+Quick Start
+~~~~~~~~~~~
+
+Before you can use this plugin you must have access to an npaste server:
+
+https://src.grytoyr.io/kim/npaste
+
+The next step is to add your server URL and credentials to the settings.
+Open the npaste settings from the main menu and change the default values.
+
+Usage
+~~~~~
+
+If you select one or more regions, these regions will be concatinated before
+being uploaded. If you select nothing, the whole file will be uploaded.
+
+Encryption
+~~~~~~~~~~
+
+If you enable encryption, make sure you have GPG in your $PATH environment
+variable.
+
+Problems?
+~~~~~~~~~
+
+https://src.grytoyr.io/kim/npaste/issues
