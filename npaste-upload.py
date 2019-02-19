@@ -22,11 +22,11 @@ class NpasteUploadCommand(sublime_plugin.TextCommand):
 
     data = ""
     passphrase = None
-    payload = {'age': settings.get('npaste.age') }
+    payload = {'age': settings.get('age') }
 
     # Encrypt paste using GPG
-    if (settings.get('npaste.encrypt') == True):
-      passphrase = ''.join(random.SystemRandom().choice(string.ascii_lowercase + string.digits) for _ in range(settings.get('npaste.encryption_key_length')))
+    if (settings.get('encrypt') == True):
+      passphrase = ''.join(random.SystemRandom().choice(string.ascii_lowercase + string.digits) for _ in range(settings.get('encryption_key_length')))
 
       process = Popen(['gpg', '--armor', '--batch', '--passphrase', passphrase, '--symmetric'], stdin=PIPE, stdout=PIPE, stderr=PIPE)
       d = bytes(npaste_data, 'utf-8')
@@ -41,12 +41,12 @@ class NpasteUploadCommand(sublime_plugin.TextCommand):
     else:
       data = npaste_data
 
-    if settings.get('npaste.archive') == True:
+    if settings.get('archive') == True:
       payload["archive"] = 1
 
     # Upload paste to npaste
     files = {'paste': ('paste.txt', data, 'text/plain')}
-    r = requests.post(settings.get('npaste.url'), files=files, data=payload, auth=HTTPBasicAuth(settings.get('npaste.username'), settings.get('npaste.password')))
+    r = requests.post(settings.get('url'), files=files, data=payload, auth=HTTPBasicAuth(settings.get('username'), settings.get('password')))
 
     url = r.text
 

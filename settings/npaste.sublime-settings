@@ -1,22 +1,22 @@
 {
 //  Specifies the URL of the npaste server to use
-    "npaste.url": "http://localhost:3000/",
+    "url": "http://localhost:3000/",
 
 //  Specifies the npaste API username
-    "npaste.username": "user",
+    "username": "user",
 
 //  Specifies the npaste API password
-    "npaste.password": "password",
+    "password": "password",
 
 //  If true, pastes will be archived instead of deleted when they expire.
-    "npaste.archive": true,
+    "archive": true,
 
 //  Sets the age of pastes (s,m,h,d,y)
-    "npaste.age": "14d",
+    "age": "14d",
 
 //  If true, pastes will be encrypted using GPG
-    "npaste.encrypt": true,
+    "encrypt": true,
 
 //  Encryption key length
-    "npaste.encryption_key_length": 32
+    "encryption_key_length": 32
 }
